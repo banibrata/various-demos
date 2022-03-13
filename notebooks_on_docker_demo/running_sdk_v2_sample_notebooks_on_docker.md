@@ -16,11 +16,11 @@ Open command prompt/powershell
 clone the repo wih the branch banide/e2e-demo
 
 ```
-git clone https://github.com/Azure/azureml-examples.git -b banide/e2e-demo
+git clone https://github.com/banibrata/various-demos.git 
 ```
 
 
-Go inside notebooks/demo/dockerbuild folder and run docker build
+Go inside notebooks_on_docker_demo  and run docker build
 
 
 ```
