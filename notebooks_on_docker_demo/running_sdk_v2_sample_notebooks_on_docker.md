@@ -36,6 +36,6 @@ docker run --name sample_container --rm -p 8888:8888 -it sdkv2-samples:latest
 Run this command in the container:
 
 ```
-jupyter lab --no-browser >/var/log/jupyter.log 2>&1 < /var/log/jupyter.log &
+bash .start_jupyter.sh
 ```
 Open [http://localhost:8888/lab](http://localhost:8888/lab)
