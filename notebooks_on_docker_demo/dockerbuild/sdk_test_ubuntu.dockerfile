@@ -26,5 +26,5 @@ RUN pip install jupyterlab && jupyter notebook --generate-config
 WORKDIR /root/.jupyter
 COPY dockerbuild/jupyter_server_config.py jupyter_server_config.py
 WORKDIR /root
-COPY  dockerbuild/.start.sh .start_jupyter.sh
+COPY dockerbuild/.start.sh .start_jupyter.sh
 COPY notebooks notebooks
