@@ -24,7 +24,7 @@ Go inside notebooks_on_docker_demo  and run docker build
 
 
 ```
-cd notebooks_on_docker_demo
+cd various-demos/notebooks_on_docker_demo
 docker build --pull --rm -f "dockerbuild/sdk_test_ubuntu.dockerfile" -t sdkv2-samples:latest "." 
 ```
 
