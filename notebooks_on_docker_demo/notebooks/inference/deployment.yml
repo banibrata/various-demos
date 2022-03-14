@@ -1,0 +1,15 @@
+name: blue
+endpoint_name: deploytest
+description: description for online deployment
+model:
+  path: <this needs to be set>
+code_configuration:
+  code: ./scoring
+  scoring_script: score.py
+environment:
+  conda_file: ./environment/conda.yml
+  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20210727.v1
+instance_count: 1
+instance_type: Standard_DS2_V2
+scale_settings:
+  type: default
