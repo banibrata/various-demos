@@ -2,7 +2,7 @@ name: blue
 endpoint_name: deploytest
 description: description for online deployment
 model:
-  path: <this needs to be set>
+  path: ./model/model.pkl
 code_configuration:
   code: ./scoring
   scoring_script: score.py

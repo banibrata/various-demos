@@ -1,6 +1,5 @@
 # imports
 import os
-import mlflow
 import argparse
 
 import pandas as pd
@@ -11,8 +10,6 @@ from sklearn.model_selection import train_test_split
 
 # define functions
 def main(args):
-    # enable auto logging
-    mlflow.autolog()
 
     # setup parameters
     params = {

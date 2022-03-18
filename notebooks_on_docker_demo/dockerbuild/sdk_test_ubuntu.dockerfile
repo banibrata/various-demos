@@ -16,7 +16,7 @@ RUN conda init bash
 #Choose your version of azcli
 RUN echo "pip install azure-cli" | bash
 #Choose your version of ml cli
-RUN echo "az extension add -n ml" | bash
+RUN echo "az extension add --source https://azuremlsdktestpypi.blob.core.windows.net/wheels/azureml-v2-cli-e2e-test/58606844/ml-0.0.58606844-py3-none-any.whl --pip-extra-index-urls https://azuremlsdktestpypi.azureedge.net/azureml-v2-cli-e2e-test/58606844 --yes" | bash
 
 ##This is to run jupyter as a back ground process
 ##Docker does not have background scheduler e.g. systemctl like nornal linux
